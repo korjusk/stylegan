@@ -53,8 +53,8 @@ display(leo), display(kaur), display(leo - kaur)
 ```
 ![](/images/leo.png)![](/images/kaur.png)![](/images/diff.png)  
 Leonardo's eyebrows are thick and angled but mine are straight and thin.  
-If you take my straight/thin and add the third pictures dark/curvy eyebrows together then you get Leonardo's eyebrows. 
-So basically it possible to conclude whos on the first picture if you see only the second and third pictures.
+If you take my straight/thin and add the third pictures dark/curvy eyebrows together then you get Leonardo's eyebrows.   
+So basically, it's possible to conclude whos on the first picture if you see only the second and third pictures.
 
 <br> 
 
