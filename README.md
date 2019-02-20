@@ -45,13 +45,16 @@ Examples of how loss decreases when iterations increase
 
 <br> 
 
-### Kaur minus Leo
+### Leonardo DiCaprio minus Kaur
 ```
 type(kaur), kaur.shape
 >>> (numpy.ndarray, (18, 512))
-display(kaur), display(leo), display(leo - kaur)
+display(leo), display(kaur), display(leo - kaur)
 ```
-![](/images/kaur.png)![](/images/leo.png)![](/images/diff.png)
+![](/images/leo.png)![](/images/kaur.png)![](/images/diff.png)  
+Leonardo's eyebrows are thick and angled but mine are straight and thin.  
+If you take my straight/thin and add the third pictures dark/curvy eyebrows together then you get Leonardo's eyebrows. 
+So basically it possible to conclude whos on the first picture if you see only the second and third pictures.
 
 <br> 
 
@@ -61,7 +64,7 @@ display(kaur), display(leo), display(leo - kaur)
 <br> 
 
 ### Style mixing
-Result when the 8 input images were trained with defualt settings:  
+Result when the 8 input images were trained with default settings:  
 [58MB image in Google Drive](https://drive.google.com/file/d/17H_Faxs_yvidOIhofHeCvFTMC6zBTVr-/view?usp=sharing)
 
 Result when the images were trained 4000 iterations:  
@@ -70,7 +73,7 @@ Result when the images were trained 4000 iterations:
 <br> 
 
 ### Style transformation
-In general it's possible to find directions of almost any face attributes: position, hair style or color etc.
+In general, it's possible to find directions of almost any face attributes: position, hairstyle or color etc.
 
 #### Age
 ![](/images/age.jpg)
