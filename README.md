@@ -25,6 +25,7 @@ python encode_images.py aligned_images/ generated_images/ latent_representations
 '--iterations', default=1000, help='Number of optimization steps for each batch', type=int  
 '--randomize_noise', default=False, help='Add noise to dlatents during optimization', type=bool  
 
+<br> 
 
 #### Hyperparameter tuning
 parameter - loss  
@@ -42,6 +43,23 @@ Increasing iterations is the only way to decrease loss.
 Examples of how loss decreases when iterations increase  
 ![](/images/lossVsItersExample.jpg)
 
+<br> 
+
+### Kaur minus Leo
+```
+type(kaur), kaur.shape
+>>> (numpy.ndarray, (18, 512))
+display(kaur), display(leo), display(leo - kaur)
+```
+![](/images/kaur.png)![](/images/leo.png)![](/images/diff.png)
+
+<br> 
+
+### Kaur to Leo
+![](/images/kaurLeo.gif)
+
+<br> 
+
 ### Style mixing
 Result when the 8 input images were trained with defualt settings:  
 [58MB image in Google Drive](https://drive.google.com/file/d/17H_Faxs_yvidOIhofHeCvFTMC6zBTVr-/view?usp=sharing)
@@ -49,6 +67,7 @@ Result when the 8 input images were trained with defualt settings:
 Result when the images were trained 4000 iterations:  
 [59MB image in Google Drive](https://drive.google.com/file/d/1JnRg-R2IltIjujDvuXgJsr7DCVd_-E_Q/view?usp=sharing)
 
+<br> 
 
 ### Style transformation
 In general it's possible to find directions of almost any face attributes: position, hair style or color etc.
