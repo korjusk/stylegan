@@ -93,7 +93,7 @@ Then the result is not so good
 <br> 
 
 ### Video mixing
-Each frame in video is style mixed separately
+Each frame in video is style mixed separately  
 <img src="images/leo.png" height="256" width="256"/><img src="images/sync.gif"/>
 
 <br>
