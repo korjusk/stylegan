@@ -51,7 +51,9 @@ type(kaur), kaur.shape
 >>> (numpy.ndarray, (18, 512))
 display(leo), display(kaur), display(leo - kaur)
 ```
-![](/images/leo.png)![](/images/kaur.png)![](/images/diff.png)  
+
+<img src="images/leo.png" width="33%"/><img src="images/kaur.png" width="33%"/><img src="images/diff.png" width="33%"/>
+  
 Leonardo's eyebrows are thick and angled but mine are straight and thin.  
 If you take my straight/thin and add the third pictures dark/curvy eyebrows together then you get Leonardo's eyebrows.   
 So basically, it's possible to conclude whos on the first picture if you see only the second and third pictures.
@@ -64,11 +66,30 @@ So basically, it's possible to conclude whos on the first picture if you see onl
 <br> 
 
 ### Style mixing
-Result when the 8 input images were trained with default settings:  
-[58MB image in Google Drive](https://drive.google.com/file/d/17H_Faxs_yvidOIhofHeCvFTMC6zBTVr-/view?usp=sharing)
+The original image from the paper:  
+<a href="https://drive.google.com/file/d/1h22wuxaoRA66zG1HYlUPfw64k5jm8H2p/view?usp=sharing"><img src="images/org.jpg"></a>  
 
-Result when the images were trained 4000 iterations:  
-[59MB image in Google Drive](https://drive.google.com/file/d/1JnRg-R2IltIjujDvuXgJsr7DCVd_-E_Q/view?usp=sharing)
+These faces were greated like this:  
+
+```
+src_seeds=[639,701,687,615,2268], dst_seeds=[888,829,1898,1733,1614,845]
+src_latents = np.stack(np.random.RandomState(seed).randn(512) for seed in src_seeds)
+dst_latents = np.stack(np.random.RandomState(seed).randn(512) for seed in dst_seeds)
+```
+
+When random seeds are used:  
+```
+src_seeds=[1,2,3,4,5], dst_seeds=[6,7,8,9,10,11]
+```
+
+Then the result is not so good:  
+<a href="https://drive.google.com/file/d/1l3oyD7ecgAWCoDtgidqpupyKFRcNd_nY/view?usp=sharing"><img src="images/fullRandom.jpg"></a>  
+
+My result when the 8 input images were trained with default settings:  
+<a href="https://drive.google.com/file/d/17H_Faxs_yvidOIhofHeCvFTMC6zBTVr-/view?usp=sharing"><img src="images/style-mixing-1000-iters.jpg"></a>
+
+My result when the images were trained 4000 iterations:  
+<a href="https://drive.google.com/file/d/1JnRg-R2IltIjujDvuXgJsr7DCVd_-E_Q/view?usp=sharing"><img src="images/style-mixing-1000-iters.jpg"></a>
 
 <br> 
 
