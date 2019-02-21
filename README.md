@@ -85,12 +85,18 @@ src_seeds=[1,2,3,4,5], dst_seeds=[6,7,8,9,10,11]
 Then the result is not so good  
 <a href="https://drive.google.com/file/d/1l3oyD7ecgAWCoDtgidqpupyKFRcNd_nY/view?usp=sharing"><img src="images/fullRandom.jpg"></a>  
 
-#### My style mixing
+### My style mixing
 
 8 input images were trained with 1000 iterations and with 4000 iterations  
 <a href="https://drive.google.com/file/d/17H_Faxs_yvidOIhofHeCvFTMC6zBTVr-/view?usp=sharing"><img src="images/style-mixing-1000-iters.jpg"></a>  <a href="https://drive.google.com/file/d/1JnRg-R2IltIjujDvuXgJsr7DCVd_-E_Q/view?usp=sharing"><img src="images/style-mixing-1000-iters.jpg"></a>
 
 <br> 
+
+### Video mixing
+Each frame in video is style mixed separately
+<img src="images/leo.png" height="256" width="256"/><img src="images/sync.gif"/>
+
+<br>
 
 ### Style transformation
 In general, it's possible to find directions of almost any face attributes: position, hairstyle or color etc.
